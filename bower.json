@@ -1,0 +1,14 @@
+{
+  "name": "learn-mean",
+  "description": "Learning Mean",
+  "main": "index.js",
+  "authors": [
+    "James Lopena"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jameslopena/learn-mean",
+  "moduleType": [
+    "node"
+  ],
+  "private": true
+}
