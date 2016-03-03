@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/jameslopena/learn-mean/issues"
   },
-  "homepage": "https://github.com/jameslopena/learn-mean#readme"
+  "homepage": "https://github.com/jameslopena/learn-mean#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
+  }
 }
