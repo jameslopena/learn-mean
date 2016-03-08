@@ -25,6 +25,14 @@ app.use(stylus.middleware({
     compile: compile
 }));
 app.use(express.static(__dirname + '/public'));
+
+mongoose.connect("mongodb://dbuser:dbuser@ds064628.mlab.com:64628/mynode")
+var db = mongoose.connection;
+db.on('error',console.error.bind(console, 'connection error...'));
+db.once('open', function callback() {
+    console.log("db opened");
+});
+
 app.get('/partials/:partialPath', function(req, res){
   res.render('partials/' + req.params.partialPath);
 });
