@@ -1,7 +1,11 @@
+/// <reference path="typings/main.d.ts" />
+
 var express = require('express'),
     stylus = require('stylus'),
     logger = require('morgan'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    mongoose = require('mongoose')
+    ;
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
